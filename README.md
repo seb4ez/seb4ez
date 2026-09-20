@@ -72,6 +72,15 @@ A deterministic runtime that wraps TypeSafe AI probabilistic model evaluations w
 * **Uncertainty Calibration**: Automatically flags bimodal ties and low-certainty scores as `AMBIGUOUS_STATE` before downstream business logic executes.
 * **Empirical Live Benchmark**: Validated across 50 live production requests on TypeSafe AI's official endpoint with a 100% pass rate.
 
+### [JevGuard MCP Server](https://github.com/seb4ez/jevguard-mcp)
+*Author & Maintainer | Model Context Protocol Server for Claude, Cursor & LibreChat*
+
+Official Model Context Protocol (MCP) server for JevGuard, exposing deterministic decision runtime, certainty calibration, state pruning, and SHA-256 fingerprint caching over standard input/output (stdio).
+
+* **Zero External Dependencies**: Implemented strictly with the Python standard library, requiring zero npm, npx, or pip packages.
+* **MCP 2024-11-05 Protocol Fidelity**: Fully compliant JSON-RPC 2.0 stdio framing supporting initialize handshakes, tool discovery, and tool execution.
+* **Agent Integration**: Pre-configured for single-block integration into Claude Desktop (`claude_desktop_config.json`), Cursor IDE, and LibreChat.
+
 ---
 
 ## Open Source Contributions & Pull Requests
