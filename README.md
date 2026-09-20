@@ -1,43 +1,50 @@
 # Seb4Ez
 
-Systems and backend developer focused on deterministic AI runtimes, agentic tooling, and resilient protocol SDKs.
+Systems and backend developer focused on deterministic AI runtimes, agentic tooling, and resilient client SDKs.
 
-My work centers on bridging probabilistic AI systems with deterministic software engineering: eliminating unhandled edge cases in model outputs, optimizing payload latency with zero external dependencies, and building reliable developer tooling for autonomous agent loops.
+My work centers on bridging probabilistic AI systems with deterministic software engineering: eliminating unhandled edge cases in model outputs, optimizing payload latency with zero external dependencies, and contributing to open-source developer tooling and distributed protocols.
 
 ---
 
-## Featured Work
+## Authored Projects
 
 ### [JevGuard](https://github.com/seb4ez/jevguard)
-*Deterministic Decision Runtime for TypeSafe AI (Jev / System One)*
+*Author & Maintainer | Deterministic Decision Runtime for TypeSafe AI (Jev / System One)*
 
-JevGuard wraps standard probabilistic model evaluations with deterministic state pruning, closed-world escape injection, certainty calibration, and zero-token caching using only the Python standard library.
+A deterministic runtime that wraps TypeSafe AI probabilistic model evaluations with state pruning, closed-world escape injection, certainty calibration, and zero-token caching using only the Python standard library.
 
 * **Zero-Dependency Architecture**: Built entirely on Python stdlib (`urllib`, `sqlite3`, `concurrent.futures`, `asyncio`), requiring zero external runtime packages.
-* **Sub-Millisecond Local Overhead**: Local execution pipeline (pruning, hashing, calibration, caching) processes in under 0.22 ms, over 14x below production SLA thresholds.
+* **Sub-Millisecond Local Overhead**: Local pipeline (pruning, hashing, calibration, caching) executes in under 0.22 ms, over 14x below production SLA budgets.
 * **Deterministic RAM & Disk Cache**: Canonical SHA-256 fingerprinting with volatile key masking (`timestamp`, `trace_id`, `request_id`). Delivers 0.099 ms cache hits, yielding a 7,711x network speedup and 100% token savings.
-* **Closed-World Escape Protection**: Injects `UNRESOLVED_OR_OTHER` fallbacks to prevent out-of-distribution inputs from forcing false positive categorical choices.
+* **Closed-World Escape Protection**: Automatically injects `UNRESOLVED_OR_OTHER` fallbacks to isolate out-of-distribution inputs from forcing false positive categorical choices.
 * **Uncertainty Calibration**: Automatically flags bimodal ties and low-certainty scores as `AMBIGUOUS_STATE` before downstream business logic executes.
-* **Empirical Live Benchmark**: Validated against 50 live production requests on TypeSafe AI's official endpoint with a 100% pass rate.
+* **Empirical Live Benchmark**: Validated across 50 live production requests on TypeSafe AI's official endpoint with a 100% pass rate.
 
-### [Monk Plugin](https://github.com/seb4ez/monk-plugin)
-*Automation Plugin for AI Coding Agents*
+---
 
-Orchestration tooling and scripts for autonomous developer agents, integrating system-level execution hooks and developer workflows.
+## Open Source Contributions & Pull Requests
 
-### [Lily SDK](https://github.com/seb4ez/lily-sdk)
-*TypeScript SDK for Decentralized Protocols*
+Active contributor submitting targeted improvements, fixes, and client resilience features to upstream open-source repositories:
 
-Client infrastructure and transport resilience for distributed systems, featuring typed HTTP error taxonomy, request timeout abort controllers, and robust retry logic.
+### [Lily-Protocol / lily-sdk](https://github.com/Lily-Protocol/lily-sdk)
+*Decentralized Protocol Client SDK (TypeScript)*
+
+* Contributed to client transport resilience, typed HTTP error taxonomies, and request timeout abort handlers.
+* Helped ensure consistent error surfaces for API callers across non-200 HTTP responses.
+
+### [monk-io / monk-plugin](https://github.com/monk-io/monk-plugin)
+*AI Coding Agent Integration Plugin*
+
+* Contributed automation scripts and process integration for AI coding agents and developer workflows.
 
 ---
 
 ## Agentic Systems & Ecosystem Focus
 
-Active development, tracking, and implementation across modern agentic architectures:
+Deploying, testing, and tracking open-source architectures across the autonomous agent and backend ecosystem:
 
-* **Autonomous Agent Runtimes**: Agent state management, short-term and episodic memory structures, and multi-agent coordination ([elizaOS](https://github.com/elizaOS/eliza), [LobeHub](https://github.com/lobehub/lobehub)).
-* **Model Context Protocol (MCP) & Interfaces**: Tool execution, structured schemas, and extensible multi-model integrations ([LibreChat](https://github.com/danny-avila/LibreChat), [Open-WebUI](https://github.com/open-webui/open-webui)).
+* **Autonomous Agent Runtimes**: Agent state management, episodic memory structures, and multi-agent coordination ([elizaOS](https://github.com/elizaOS/eliza), [LobeHub](https://github.com/lobehub/lobehub)).
+* **Model Context Protocol (MCP) & Interfaces**: Tool execution schemas and multi-model interfaces ([LibreChat](https://github.com/danny-avila/LibreChat), [Open-WebUI](https://github.com/open-webui/open-webui)).
 * **Backend Data Infrastructure**: Headless CMS engines, real-time databases, and auto-generated API layers ([Directus](https://github.com/directus/directus)).
 
 ---
