@@ -24,7 +24,7 @@ A deterministic runtime that wraps TypeSafe AI probabilistic model evaluations w
 
 ## Open Source Contributions & Pull Requests
 
-Active contributor submitting targeted improvements, fixes, and client resilience features to upstream open-source repositories:
+Contributor submitting targeted improvements, fixes, and client resilience features to upstream open-source repositories:
 
 ### [Lily-Protocol / lily-sdk](https://github.com/Lily-Protocol/lily-sdk)
 *Decentralized Protocol Client SDK (TypeScript)*
